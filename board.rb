@@ -38,6 +38,13 @@ class Board
     end
   end
 
+  def update_board(pos,flag)
+    if flag == "F"
+      @grid[pos].flagged = ( @grid[pos].flagged ? false : true )
+    else
+
+  end
+
   def [](pos)
     # x,y = pos
     # [x][y] = pos
